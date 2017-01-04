@@ -49,6 +49,13 @@ app.get('/about', (req,res) => {
   });
 });  //Render Page using HBS
 
+app.get('/projects', (req,res) => {
+  res.render('projects.hbs', {
+    title: 'New Project Page'
+  });
+});  //Render Page using HBS
+
+
 app.get('/bad', (req,res) => {
   res.send({
       errorMessage: 'The Error Here'
